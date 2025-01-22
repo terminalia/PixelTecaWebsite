@@ -1,4 +1,4 @@
-*.rsuser
+*.vscode
 *.DS_Store
 *.pem
 *-lock.json
