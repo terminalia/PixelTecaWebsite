@@ -350,10 +350,8 @@ body {
     src: url('fonts/Roboto-VariableFont_wdth\,wght.ttf');
 }
 
-@media screen and (min-width: 820px) {
-    /* #main-container {
-        display: none;
-    } */
+/* @media screen and (min-width: 820px) {
+
 
     :root {
         --claim-container-flex-dir: column;
@@ -365,7 +363,7 @@ body {
         --claim-font-size: 3rem;
         --area-container-width: 100%;
     }
-}
+} */
 
 @media screen and (max-width: 992px) {
     :root {
