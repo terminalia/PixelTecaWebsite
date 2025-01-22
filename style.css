@@ -16,6 +16,7 @@
     --claim-font: 'Poppins';
     --claim-font-size: 5rem;
     --claim-font-color: white;
+    --claim-text-justify-content: flex-start;
     --claim-text-align: left;
     --footer-font: 'Poppins';
     --footer-font-size: 1rem;
@@ -258,6 +259,7 @@ body {
 
 #claim-text {
     display: flex;
+    justify-content: var(--claim-text-justify-content);
     align-items: center;
     width: var(--claim-text-width);
     text-decoration: underline;
@@ -376,5 +378,14 @@ body {
 
     .area-empty {
         display: none;
+    }
+}
+
+@media screen and (max-width: 992px) and (orientation: landscape) {
+    :root {
+        --menu-button-container-width: 80%;
+        --menu-container-padding: 60px 20px 0 60px;
+        --menu-font-size: 3rem;
+        --claim-text-justify-content: center;
     }
 }
