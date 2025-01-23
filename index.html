@@ -138,9 +138,28 @@
     <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
     <script>
+        let menuVisible = false;
         $(document).ready(function() {
+
+            if (!menuVisible)
+                $('#menu-container').hide();
+
             $('#menu-button').click(function() {
                 $('#menu-button').toggleClass('change');
+                
+
+                menuVisible = !menuVisible;
+                
+                if (menuVisible) {
+                    $('#menu-container').show();
+                    $('.area-content').hide();
+                    $('#claim-video').hide();
+                }
+                else { 
+                    $('#menu-container').hide();
+                    $('.area-content').show();
+                    $('#claim-video').show();
+                }
                 $('#menu-container').toggleClass('menu-visible');
             });
         });
