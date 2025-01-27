@@ -89,7 +89,6 @@ body {
     width: 100%;
     padding: var(--navbar-padding);
     background: var(--navbar-bg-color);
-    cursor: pointer;
     /* border: 1px solid red; */
 }
 
@@ -130,6 +129,13 @@ body {
 
 .quad-empty {
     opacity: 0;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* border: 1px solid yellow; */
 }
 
 /* MENU BUTTON */

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- MENU  -->
     <div id="menu-container">
@@ -16,20 +18,21 @@
 
     <!-- NAVBAR -->
     <div id="navbar">
-        <!-- LOGO 1 -->
-        <div class="navbar-item">PIXEL</div>
-        
-        <!-- SYMBOL -->
-        <div class="symbol-container">
-            <div class="quad quad1"></div>
-            <div class="quad quad-empty"></div>
-            <div class="quad quad-empty"></div>
-            <div class="quad quad2"></div>
+        <div id="logo-container">
+            <!-- LOGO 1 -->
+            <div class="navbar-item">PIXEL</div>
+
+            <!-- SYMBOL -->
+            <div class="symbol-container">
+                <div class="quad quad1"></div>
+                <div class="quad quad-empty"></div>
+                <div class="quad quad-empty"></div>
+                <div class="quad quad2"></div>
+            </div>
+
+            <!-- LOGO 2 -->
+            <div class="navbar-item logo-color2">TECA</div>
         </div>
-
-        <!-- LOGO 2 -->
-        <div class="navbar-item logo-color2">TECA</div>
-
         <!-- MENU BUTTON -->
         <div id="menu-button-container">
             <div id="menu-button">
@@ -59,23 +62,23 @@
         <div class="area-container">
             <div class="area-text">
                 <p>
-                    <h2>Augemented reality</h2><br>
-                    With 10 years of experience in the field of augemented reality (AR), our AR applications range from
-                    mobile app, desktop applications and web app.<br>
-                    We use the most cutting edge libraries to explore new and exciting ways to use this technology always
-                    at the service of great storytelling that inspires emotions
-                    </p>
+                <h2>Augemented reality</h2><br>
+                With 10 years of experience in the field of augemented reality (AR), our AR applications range from
+                mobile app, desktop applications and web app.<br>
+                We use the most cutting edge libraries to explore new and exciting ways to use this technology always
+                at the service of great storytelling that inspires emotions
+                </p>
             </div>
             <div class="area-empty">
                 <div class="area-client-comment">
                     "It's been a pleasure working with the guys at PIXELTECA"<br><br>
-                    <span class="client-name">Ciccio Pasticcio - Head of development @Kinder</span> 
+                    <span class="client-name">Ciccio Pasticcio - Head of development @Kinder</span>
                 </div>
             </div>
             <div class="area-empty">
                 <div class="area-client-comment">
                     "It's been a pleasure working with the guys at PIXELTECA"<br><br>
-                    <span class="client-name">Ciccio Pasticcio - Head of development @Kinder</span> 
+                    <span class="client-name">Ciccio Pasticcio - Head of development @Kinder</span>
                 </div>
             </div>
             <div class="area-content">
@@ -87,23 +90,23 @@
         <div class="area-container">
             <div class="area-text">
                 <p>
-                    <h2>Virtual reality</h2><br>
-                    With 10 years of experience in the field of augemented reality (AR), our AR applications range from
-                    mobile app, desktop applications and web app.<br>
-                    We use the most cutting edge libraries to explore new and exciting ways to use this technology always
-                    at the service of great storytelling that inspires emotions
-                    </p>
+                <h2>Virtual reality</h2><br>
+                With 10 years of experience in the field of augemented reality (AR), our AR applications range from
+                mobile app, desktop applications and web app.<br>
+                We use the most cutting edge libraries to explore new and exciting ways to use this technology always
+                at the service of great storytelling that inspires emotions
+                </p>
             </div>
             <div class="area-empty">
                 <div class="area-client-comment">
                     "It's been a pleasure working with the guys at PIXELTECA"<br><br>
-                    <span class="client-name">Ciccio Pasticcio - Head of development @Kinder</span> 
+                    <span class="client-name">Ciccio Pasticcio - Head of development @Kinder</span>
                 </div>
             </div>
             <div class="area-empty">
                 <div class="area-client-comment">
                     "It's been a pleasure working with the guys at PIXELTECA"<br><br>
-                    <span class="client-name">Ciccio Pasticcio - Head of development @Kinder</span> 
+                    <span class="client-name">Ciccio Pasticcio - Head of development @Kinder</span>
                 </div>
             </div>
             <div class="area-content">
@@ -113,8 +116,8 @@
             </div>
         </div>
 
-        
-        
+
+
     </div>
     <div id="footer">
         <div class="footer-item">
@@ -140,28 +143,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
     <script>
         let menuVisible = false;
-        $(document).ready(function() {
+        $(document).ready(function () {
 
-            $('#navbar').click(function() {
+            $('#logo-container').click(function () {
                 window.location = 'index.html';
             });
-            
+
 
             if (!menuVisible)
                 $('#menu-container').hide();
 
-            $('#menu-button').click(function() {
+            $('#menu-button').click(function () {
                 $('#menu-button').toggleClass('change');
-                
+
 
                 menuVisible = !menuVisible;
-                
+
                 if (menuVisible) {
                     $('#menu-container').show();
                     $('.area-content').hide();
                     $('#claim-video').hide();
                 }
-                else { 
+                else {
                     $('#menu-container').hide();
                     $('.area-content').show();
                     $('#claim-video').show();
@@ -171,4 +174,5 @@
         });
     </script>
 </body>
+
 </html>
