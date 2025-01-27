@@ -1,0 +1,11 @@
+:root {
+    --main-container-padding: 55px 20px 2000px 20px;
+}
+
+#main-container {
+    border: 1px solid green;
+}
+
+.area-container {
+    border: 1px solid red;
+}

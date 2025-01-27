@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PIXELTECA Studio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -141,37 +141,7 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
-    <script>
-        let menuVisible = false;
-        $(document).ready(function () {
-
-            $('#logo-container').click(function () {
-                window.location = 'https://terminalia.github.io/PixelTecaWebsite/';
-            });
-
-
-            if (!menuVisible)
-                $('#menu-container').hide();
-
-            $('#menu-button').click(function () {
-                $('#menu-button').toggleClass('change');
-
-
-                menuVisible = !menuVisible;
-
-                if (menuVisible) {
-                    $('#menu-container').show();
-                    $('.area-content').hide();
-                    $('#claim-video').hide();
-                }
-                else {
-                    $('#menu-container').hide();
-                    $('.area-content').show();
-                    $('#claim-video').show();
-                }
-                $('#menu-container').toggleClass('menu-visible');
-            });
-        });
+    <script src="app.js" type="text/javascript">
     </script>
 </body>
 
