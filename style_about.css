@@ -1,11 +1,71 @@
 :root {
-    --main-container-padding: 55px 20px 2000px 20px;
+    
+    
+    --main-container-padding: 55px 20px 0px 20px;
+    --about-us-margin-top: 2%;
+    --about-us-margin-bottom: 5%;
+    --our-services-font-size: 1.5rem;
+    --our-services-margin-bottom: 0%;
+    --our-services-text-padding: 0% 5% 1% 5%;
 }
 
-#main-container {
-    border: 1px solid green;
+#about-us-container {
+    width: 100%;
+    background: white;
+    color: black;
+    font-family: var(--area-text-font);
+    font-size: var(--area-text-font-size);
+    text-align: justify;
+    margin-top: var(--about-us-margin-top);
+    padding: var(--area-text-padding);
+    border-radius: 25px;
+    margin-bottom: var(--about-us-margin-bottom);
+    /* border: 1px solid red; */
 }
 
-.area-container {
-    border: 1px solid red;
+#our-services-container {
+    width: 100%;
+    /* background: white; */
+    color: white;
+    font-family: var(--area-text-font);
+    font-size: var(--our-services-font-size);
+    text-align: justify;
+    padding: var(--our-services-text-padding);
+    border-radius: 25px;
+    margin-bottom: var(--our-services-margin-bottom);
+    /* border: 1px solid red; */
+}
+
+/* DESKTOP */
+@media (min-width: 1281px) {
+    :root {
+        --menu-font-size: 8rem;
+        --navbar-padding: 30px;
+        --logo-font-size: 3rem;
+        --quad-size: 35px;
+        --main-container-padding: 150px 150px 0px 150px;
+        --claim-container-flex-dir: column;
+        --claim-container-margin-bottom: 5%;
+        --claim-text-padding: 1%;
+        --claim-text-margin-bottom: 1%;
+        --claim-font-size: 7rem;
+        --claim-video-width: 100%;
+
+        --area-container-flex-dir: row;
+        --area-container-margin-bottom: 0%;
+        --area-text-width: 50%;
+        --area-text-height: 500px;
+        --area-text-border-radius: 25px 0 0 0;
+        --area-text-font-size: 1.2rem;
+        --area-content-border-radius: 0 0 25px 0;
+        --area-empty-display: flex;
+
+        --footer-flex-dir: row;
+        --footer-margin-top: 5%;
+
+        --about-us-margin-bottom: 2%;
+        --our-services-text-padding: 2% 5% 0% 5%;
+        --our-services-font-size: 3rem;
+        
+    }
 }
