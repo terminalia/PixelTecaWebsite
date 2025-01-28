@@ -63,6 +63,7 @@
     --area-text-padding: 5%;
     --area-text-bg-color: white;
     --area-text-border-radius: 25px 25px 0 0;
+    --area-text-text-align: justify;
     --area-content-border-radius: 0 0 25px 25px;
     --area-empty-display: none;
     --area-client-comment-padding: 2%;
@@ -258,6 +259,7 @@ body {
     padding: var(--area-text-padding);
     font-family: var(--area-text-font);
     font-size: var(--area-text-font-size);
+    text-align: var(--area-text-text-align);
     color: var(--area-text-font-color);
     border-radius: var(--area-text-border-radius);
     overflow: hidden;
