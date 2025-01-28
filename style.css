@@ -44,7 +44,7 @@
 
     /* MENU */
     --menu-bg-color: black;
-    --menu-padding: 0 0 0 5%;
+    --menu-padding: 0 0 0 10%;
 
     /* MAIN CONTAINER */
     --main-container-padding: 55px 20px 0px 20px;
@@ -354,13 +354,14 @@ body {
         --menu-font-size: 8rem;
         --navbar-padding: 30px;
         --logo-font-size: 3rem;
+        --menu-padding: 0 0 0 15%;
         --quad-size: 35px;
-        --main-container-padding: 150px 150px 0px 150px;
+        --main-container-padding: 150px 250px 0px 250px;
         --claim-container-flex-dir: column;
         --claim-container-margin-bottom: 5%;
         --claim-text-padding: 1%;
         --claim-text-margin-bottom: 1%;
-        --claim-font-size: 7rem;
+        --claim-font-size: 5rem;
         --claim-video-width: 100%;
 
         --area-container-flex-dir: row;
