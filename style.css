@@ -70,6 +70,7 @@
 
     /* FOOTER */
     --footer-flex-dir: column;
+    --footer-margin-top: 0%;
     --footer-height: 450px;
     --footer-bg-color: black;
     --footer-padding: 2%;
@@ -310,6 +311,7 @@ body {
     width: 100%;
     height: var(--footer-height);
     background: var(--footer-bg-color);
+    margin-top: var(--footer-margin-top);
 }
 
 .footer-item {
@@ -362,6 +364,7 @@ body {
         --claim-video-width: 100%;
 
         --area-container-flex-dir: row;
+        --area-container-margin-bottom: 0%;
         --area-text-width: 50%;
         --area-text-height: 500px;
         --area-text-border-radius: 25px 0 0 0;
@@ -370,5 +373,6 @@ body {
         --area-empty-display: flex;
 
         --footer-flex-dir: row;
+        --footer-margin-top: 5%;
     }
 }
