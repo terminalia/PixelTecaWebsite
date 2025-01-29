@@ -28,4 +28,11 @@ $(document).ready(function () {
         }
         $('#menu-container').toggleClass('menu-visible');
     });
+
+    let list1 = ["What we offer", "Advanced & geolocalized augmented reality (AR)"];
+    let list2 = ["Oh wow, Napoleon is walking next to me!"];
+    let textAnimator = new TextAnimator('#digital-contents-offers', list1, true);
+    textAnimator.run();
+    let textAnimator2 = new TextAnimator('#digital-contents-suggestions', list2, false);
+    setTimeout(()=> textAnimator2.run(), 0);
 });
