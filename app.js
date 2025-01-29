@@ -29,10 +29,19 @@ $(document).ready(function () {
         $('#menu-container').toggleClass('menu-visible');
     });
 
-    let list1 = ["What we offer", "Digital signage", "Interactive & animated led wall", "3D rendering & animation", "Advanced & geolocalized augmented reality (AR)"];
-    let list2 = ["Oh wow, Napoleon is walking next to me!"];
-    let textAnimator = new TextAnimator('#digital-contents-offers', list1, true);
-    textAnimator.run();
-    let textAnimator2 = new TextAnimator('#digital-contents-suggestions', list2, false);
-    setTimeout(()=> textAnimator2.run(), 0);
+    // DIGITAL CONTENTS
+    let digitalContentsOffers = ["What we offer:", "Digital signage", "Interactive & animated led wall", "3D rendering & animation", "Advanced & geolocalized augmented reality (AR)"];
+    let digitalContentsSuggestions = ["", "Animate your advertising and make it unforgettable", ""];
+    
+
+    let digitalContentsAnimator1 = new TextAnimator('#digital-contents-offers', digitalContentsOffers, true);
+    digitalContentsAnimator1.run();
+    let digitalContentsAnimator2 = new TextAnimator('#digital-contents-suggestions', digitalContentsSuggestions, false);
+    setTimeout(()=> digitalContentsAnimator2.run(), 0);
+
+    //MEUSUMS & FOUNDATIONS
+    let museumOffers = ["What we offer:", "3D rendering & animations", "Advanced & geolocalized augmented reality (AR)", "Interactive data visualization", "Digitization and interactive display of historical documents"];
+    let museumSuggestions = [""];
+    let museumAnimator1 = new TextAnimator('#museums-offers', museumOffers, true);
+    museumAnimator1.run();
 });
