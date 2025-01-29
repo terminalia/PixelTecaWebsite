@@ -52,4 +52,8 @@ class TextAnimator {
         this.animate();
         setInterval(() => this.animate(), 5000);
     }
+
+    runOnce() {
+        this.animate();
+    }
 }

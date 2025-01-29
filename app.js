@@ -29,7 +29,7 @@ $(document).ready(function () {
         $('#menu-container').toggleClass('menu-visible');
     });
 
-    let list1 = ["What we offer", "Advanced & geolocalized augmented reality (AR)"];
+    let list1 = ["What we offer", "Digital signage", "Interactive & animated led wall", "3D rendering & animation", "Advanced & geolocalized augmented reality (AR)"];
     let list2 = ["Oh wow, Napoleon is walking next to me!"];
     let textAnimator = new TextAnimator('#digital-contents-offers', list1, true);
     textAnimator.run();
