@@ -62,9 +62,9 @@
     --area-text-height: 100%;
     --area-text-padding: 5%;
     --area-text-bg-color: white;
-    --area-text-border-radius: 25px 25px 0 0;
+    --area-text-border-radius: 0px 0px 0 0;
     --area-text-text-align: justify;
-    --area-content-border-radius: 0 0 25px 25px;
+    --area-content-border-radius: 0 0 0px 0px;
     --area-empty-display: none;
     --area-client-comment-padding: 2%;
 
@@ -450,9 +450,9 @@ body {
         --area-container-margin-bottom: 0%;
         --area-text-width: 50%;
         --area-text-height: 500px;
-        --area-text-border-radius: 25px 0 0 0;
+        --area-text-border-radius: 0px 0 0 0;
         --area-text-font-size: 1.2rem;
-        --area-content-border-radius: 0 0 25px 0;
+        --area-content-border-radius: 0 0 0px 0;
         --area-empty-display: flex;
 
         --footer-flex-dir: row;
