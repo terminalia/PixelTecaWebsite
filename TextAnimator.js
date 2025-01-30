@@ -4,10 +4,16 @@ class TextAnimator {
     sentences;
     sentencesCount = 0;
     hasIntro = false;
+    delayTime;
+    waitTime;
+    cssAnim;
 
-    constructor(textContainer, sentences, hasIntro) {
+    constructor(textContainer, sentences, cssAnim, delayTime, waitTime, hasIntro) {
         this.textContainer = document.querySelector(textContainer);
         this.sentences = sentences;
+        this.cssAnim = cssAnim;
+        this.delayTime = delayTime;
+        this.waitTime = waitTime;
         this.hasIntro = hasIntro;
         this.sentenceContainer = document.createElement('div');
         this.sentenceContainer.classList.toggle('sentence');
@@ -40,8 +46,9 @@ class TextAnimator {
             }
 
             letterContainer.classList.add('startOpacity');
-            letterContainer.classList.add('anim');
-            letterContainer.style.animationDelay = i / 20 + 's';
+            // letterContainer.classList.add(this.cssAnim);
+            letterContainer.style.animation = this.cssAnim + ' ' + this.delayTime + 's forwards';
+            letterContainer.style.animationDelay = this.delayTime * i + 's';
             this.sentenceContainer.appendChild(letterContainer);
         }
 
@@ -50,7 +57,7 @@ class TextAnimator {
 
     run() {
         this.animate();
-        setInterval(() => this.animate(), 5000);
+        setInterval(() => this.animate(), this.waitTime);
     }
 
     runOnce() {

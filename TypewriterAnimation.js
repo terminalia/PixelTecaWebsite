@@ -5,13 +5,15 @@ class TypewriterAnimation {
     cssAnim;
     delayTime;
     waitTime;
+    hasIntro = false;
 
-    constructor(textContainer, sentences, cssAnim, delayTime, waitTime) {
+    constructor(textContainer, sentences, cssAnim, delayTime, waitTime, hasIntro) {
         this.textContainer = document.querySelector(textContainer);
         this.sentences = sentences;
         this.cssAnim = cssAnim;
         this.delayTime = delayTime;
         this.waitTime = waitTime;
+        this.hasIntro = hasIntro;
     }
 
     animate() {
@@ -27,6 +29,15 @@ class TypewriterAnimation {
                 letterContainer.innerHTML = '"';
             }
             letterContainer.classList.add('typewriter-letter');
+            if (this.hasIntro) {
+                if (this.sentencesCount == 0) {
+                    letterContainer.classList.add('typewriter-letter-big');
+                }
+                else {
+                    letterContainer.classList.remove('typewriter-letter-big');
+                }
+            }
+
             letterContainer.style.animation = this.cssAnim + ' ' + this.delayTime + 's forwards';
             letterContainer.style.animationDelay = this.delayTime * i + 's';
             this.textContainer.appendChild(letterContainer); 

@@ -364,17 +364,13 @@ body {
 }
 
 .letter-big {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 .startOpacity {
     opacity: 0;
 }
 
-.anim {
-    animation: txtAnim 0.3s forwards;
-}
-
-@keyframes txtAnim {
+@keyframes textAnim1 {
     0% {
         opacity: 0;
         /* transform: translateY(20px); */
@@ -393,7 +389,6 @@ body {
     width: 100%;
     color: white;
     font-family: Poppins;
-    font-size: 1.7rem;
     text-align: end;
     z-index: -1;
     padding: 20% 7% 0 7%;
@@ -402,9 +397,15 @@ body {
 
 .typewriter-letter {
     opacity: 0;
+    font-size: 2rem;
 }
 
-@keyframes typewriterAnim {
+.typewriter-letter-big {
+    opacity: 0;
+    font-size: 4rem;
+}
+
+@keyframes textAnim2 {
     0% {
         opacity: 0;
     }

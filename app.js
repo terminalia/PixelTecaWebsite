@@ -31,13 +31,17 @@ $(document).ready(function () {
 
     // DIGITAL CONTENTS
     let digitalContentsOffers = ["Our services", "Digital signage", "Interactive & animated led wall", "3D rendering & animation", "Augmented reality"];
-    let digitalContentsSuggestions = ["%Turn your digital space into an interactive billboard with live content updates%", "%Animate your advertising and make it unforgettable%", "%Transform static posters into dynamic, engaging visuals that demand attention%"];
-    
+    let digitalContentsSuggestions = ["",
+        "%Animate your advertising and make it unforgettable%", 
+        "%Elevate any environment with LED walls that respond to your audience’s movements%",
+        "%Showcase your products like never before with high-quality 3D renderings%",
+        "%Create immersive experiences that blend digital and real world%" 
+    ];
 
-    let digitalContentsAnimator1 = new TextAnimator('#digital-contents-offers', digitalContentsOffers, true);
+    let digitalContentsAnimator1 = new TextAnimator('#digital-contents-offers', digitalContentsOffers, 'textAnim1', .07, 6000, true);
     digitalContentsAnimator1.run();
-    let digitalContentsAnimator2 = new TypewriterAnimation('#digital-contents-suggestions', digitalContentsSuggestions, 'typewriterAnim', .03, 6000);
-    setTimeout(()=> digitalContentsAnimator2.run(), 6000);
+    let digitalContentsAnimator2 = new TypewriterAnimation('#digital-contents-suggestions', digitalContentsSuggestions, 'textAnim2', .03, 6000, false);
+    setTimeout(()=> digitalContentsAnimator2.run(), 0);
 
 
 });
