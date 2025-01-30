@@ -359,7 +359,7 @@ body {
 }
 
 .letter {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     /* border: 1px solid yellow; */
 }
 
@@ -385,6 +385,32 @@ body {
         opacity: 1;
         /* transform: translateY(0px); */
         transform: rotateY(0deg);
+    }
+}
+
+/* TYPEWRITER TEXT ANIMATION */
+.typewriter-text-container {
+    width: 100%;
+    color: white;
+    font-family: Poppins;
+    font-size: 1.7rem;
+    text-align: end;
+    z-index: -1;
+    padding: 20% 7% 0 7%;
+    /* border: 1px solid red; */
+}
+
+.typewriter-letter {
+    opacity: 0;
+}
+
+@keyframes typewriterAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
