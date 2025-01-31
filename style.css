@@ -391,18 +391,25 @@ body {
     font-family: Poppins;
     text-align: end;
     z-index: -1;
-    padding: 20% 7% 0 7%;
+    padding: 0% 7% 0 7%;
     /* border: 1px solid red; */
 }
 
 .typewriter-letter {
+    position: relative;
+    top: 40%;
     opacity: 0;
     font-size: 2rem;
+    transform: translateY(-40%);
+    /* border: 1px solid green; */
 }
 
 .typewriter-letter-big {
+    position: relative;
+    top: 40%;
     opacity: 0;
     font-size: 4rem;
+    transform: translateY(-40%);
 }
 
 @keyframes textAnim2 {
