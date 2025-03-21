@@ -13,6 +13,7 @@
     --menu-font: Poppins;
     --menu-font-color: white;
     --menu-font-size: 3.5rem;
+
     --footer-font: Poppins;
     --footer-font-size: 1rem;
     --footer-font-color: white;
@@ -37,6 +38,12 @@
 
     /* MAIN CONTAINER */
     --main-container-padding: 55px 20px 0px 20px;
+    --claim-font-size: 1.6rem;
+    --claim-margin-bottom: 10%;
+    --about-font-size: 1rem;
+    --about-margin-bottom: 10%;
+    --list-margin-left: 8%;
+
 
     /* FOOTER */
     --footer-flex-dir: column;
@@ -178,31 +185,94 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 900px;
+    /* height: 900px; */
     padding: var(--main-container-padding);
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 #claim-container {
-    display: flex;
-    align-items: center;
-    flex-direction: var(--claim-container-flex-dir);
     width: 100%;
-    margin-bottom: var(--claim-container-margin-bottom);
+    color: white;
+    font-family: Poppins;
+    font-size: var(--claim-font-size);
+    line-height: normal;
+    /* border: 1px solid red; */
+    margin-bottom: var(--claim-margin-bottom);
+}
+
+#about-container {
+    width: 100%;
+    color: white;
+    font-family: Poppins;
+    font-size: var(--about-font-size);
+    margin-bottom: var(--about-margin-bottom);
+    /* border: 1px solid yellow; */
+}
+
+#what-we-do-container {
+    width: 100%;
+    color: white;
+    font-family: Poppins;
+    font-size: var(--about-font-size);
+    margin-bottom: 5%;
+    /* border: 1px solid yellow; */
+}
+
+#what-we-do-container h2 {
+   text-decoration: underline;
+   font-size: 3rem;
+}
+
+#what-we-do-container h3 {
+    font-size: 2.3rem;
+}
+
+#what-we-do-container h4 {
+    font-size: 1.8rem;
+}
+
+.application-example {
+    width: 100%;
+    font-style: italic;
+    color: #b8b8b8;
+    text-align: start;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     /* border: 1px solid red; */
 }
 
-#claim-text {
+.image-collections {
     display: flex;
-    justify-content: var(--claim-text-flex-justify);
-    width: var(--claim-text-width);
-    text-align: var(--claim-text-align);
-    font-family: var(--claim-font);
-    font-size: var(--claim-font-size);
-    color: var(--claim-font-color);
-    text-decoration: underline;
-    padding: var(--claim-text-padding);
-    margin-bottom: var(--claim-text-margin-bottom);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    /* border: 1px solid red; */
+}
+
+.image-collections img {
+    max-width: 100%;;
+    object-fit: cover;
+}
+
+
+
+#what-we-do-container li {
+    margin-left: var(--list-margin-left);
+}
+
+#video-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 5%;
+    /* border: 1px solid yellow; */
 }
 
 /* FOOTER */
@@ -245,6 +315,10 @@ body {
 }
 
 @font-face {
+    font-family: Poppins-Bold;
+    src: url('fonts/Poppins-Bold.ttf');
+}
+@font-face {
     font-family: Roboto;
     src: url('fonts/Roboto-VariableFont_wdth\,wght.ttf');
 }
@@ -257,7 +331,13 @@ body {
         --logo-font-size: 3rem;
         --menu-padding: 0 0 0 15%;
         --quad-size: 35px;
+        
         --main-container-padding: 150px 250px 0px 250px;
+        --claim-font-size: 5rem;
+        --claim-margin-bottom: 5%;
+        --about-font-size: 1.5rem;
+        --about-margin-bottom: 5%;
+        --list-margin-left: 4%;
 
         --footer-flex-dir: row;
         --footer-margin-top: 5%;
