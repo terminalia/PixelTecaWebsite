@@ -38,12 +38,18 @@
 
     /* MAIN CONTAINER */
     --main-container-padding: 55px 20px 0px 20px;
-    --claim-font-size: 1.6rem;
+    --main-container-font-size: 1rem;
+    --claim-font-size: 2.5rem;
     --claim-margin-bottom: 10%;
     --about-font-size: 1rem;
     --about-margin-bottom: 10%;
     --list-margin-left: 8%;
-
+    --h2-font-size: 2.3rem;
+    --h3-font-size: 1.9rem;
+    --h4-font-size: 1.5rem;
+    --image-container-visibility: flex;
+    --images-container-visibility: none;
+    --image-holder-width: 100%;
 
     /* FOOTER */
     --footer-flex-dir: column;
@@ -185,7 +191,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* height: 900px; */
+    font-size: var(--main-container-font-size);
     padding: var(--main-container-padding);
     /* border: 1px solid green; */
 }
@@ -196,15 +202,14 @@ body {
     font-family: Poppins;
     font-size: var(--claim-font-size);
     line-height: normal;
-    /* border: 1px solid red; */
     margin-bottom: var(--claim-margin-bottom);
+    /* border: 1px solid red; */
 }
 
 #about-container {
     width: 100%;
     color: white;
     font-family: Poppins;
-    font-size: var(--about-font-size);
     margin-bottom: var(--about-margin-bottom);
     /* border: 1px solid yellow; */
 }
@@ -213,22 +218,21 @@ body {
     width: 100%;
     color: white;
     font-family: Poppins;
-    font-size: var(--about-font-size);
     margin-bottom: 5%;
     /* border: 1px solid yellow; */
 }
 
 #what-we-do-container h2 {
    text-decoration: underline;
-   font-size: 3rem;
+   font-size: var(--h2-font-size);
 }
 
 #what-we-do-container h3 {
-    font-size: 2.3rem;
+    font-size: var(--h3-font-size);
 }
 
 #what-we-do-container h4 {
-    font-size: 1.8rem;
+    font-size: var(--h4-font-size);
 }
 
 .application-example {
@@ -238,27 +242,65 @@ body {
     text-align: start;
 }
 
-.images-container {
-    display: flex;
+.image-container {
+    display: var(--image-container-visibility);
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
+    border: 1px solid #303030;
     /* border: 1px solid red; */
+}
+
+.images-container {
+    display: var(--images-container-visibility);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2%;
+    border: 1px solid #303030;
 }
 
 .image-collections {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    width: 80%;
+    width: 100%;
+    /* border: 1px solid yellow; */
+}
+
+.image-collections-multi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
     /* border: 1px solid red; */
 }
 
-.image-collections img {
+.image-holder {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--image-holder-width);
+    /* border: 1px solid violet;    */
+}
+
+.image-caption {
+    font-style: italic;
+    padding: 5%;
+    font-size: 1rem;
+    /* border: 1px solid red; */
+}
+
+.image-single {
     max-width: 100%;;
-    object-fit: cover;
+    object-fit: fill;
+}
+
+.image-multi {
+    max-width: 100%;;
+    object-fit: fill;
 }
 
 
@@ -333,11 +375,14 @@ body {
         --quad-size: 35px;
         
         --main-container-padding: 150px 250px 0px 250px;
+        --main-container-font-size: 2rem;
         --claim-font-size: 5rem;
         --claim-margin-bottom: 5%;
-        --about-font-size: 1.5rem;
         --about-margin-bottom: 5%;
         --list-margin-left: 4%;
+        --image-container-visibility: none;
+        --images-container-visibility: flex;
+        --image-holder-width: 40%;
 
         --footer-flex-dir: row;
         --footer-margin-top: 5%;
