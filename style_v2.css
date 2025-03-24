@@ -50,6 +50,7 @@
     --image-container-visibility: flex;
     --images-container-visibility: none;
     --image-holder-width: 100%;
+    --caption-font-size: 1rem;
 
     /* FOOTER */
     --footer-flex-dir: column;
@@ -289,7 +290,7 @@ body {
 .image-caption {
     font-style: italic;
     padding: 5%;
-    font-size: 1rem;
+    font-size: var(--caption-font-size);
     /* border: 1px solid red; */
 }
 
@@ -309,11 +310,20 @@ body {
     margin-left: var(--list-margin-left);
 }
 
-#video-container {
+.video-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 80%;
+    align-items: center;
+    width: 100%;
     margin-bottom: 5%;
+    /* border: 1px solid yellow; */
+}
+
+.video-caption {
+    text-align: center;
+    font-style: italic;
+    font-size: var(--caption-font-size);
     /* border: 1px solid yellow; */
 }
 
