@@ -363,17 +363,17 @@ body {
 
 @font-face {
     font-family: Chillen;
-    src: url('fonts/Chillen.ttf');
+    src: url('./fonts/Chillen.ttf');
 }
 
 @font-face {
     font-family: Poppins;
-    src: url('fonts/Poppins-Regular.ttf');
+    src: url('./fonts/Poppins-Regular.ttf');
 }
 
 @font-face {
     font-family: Poppins-Bold;
-    src: url('fonts/Poppins-Bold.ttf');
+    src: url('./fonts/Poppins-Bold.ttf');
 }
 
 /* DESKTOP */
