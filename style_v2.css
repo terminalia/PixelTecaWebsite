@@ -201,7 +201,7 @@ body {
     color: white;
     font-family: Poppins;
     font-size: var(--claim-font-size);
-    line-height: normal;
+    line-height: 100%;
     margin-bottom: var(--claim-margin-bottom);
     /* border: 1px solid red; */
 }
